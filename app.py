@@ -13,7 +13,7 @@ from io import BytesIO
 import json
 
 # Configure Gemini API (replace with your API key)
-genai.configure(api_key="AIzaSyBDhKmv4Cd1t7iq90miUVheQxG8DQMSszo")  # TODO: Move to secrets in production
+genai.configure(api_key="")  # TODO: Move to secrets in production
 
 # Initialize Gemini model
 model = genai.GenerativeModel('gemini-2.0-flash')
@@ -271,4 +271,5 @@ with tab3:
             st.markdown("---")
     else:
         st.info("Run a prediction first to unlock chat!")
+
 
